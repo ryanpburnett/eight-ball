@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(11, 11, 116);
+}
+
+.eight-ball {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 200px;
+}
+
+#buttonDiv {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#button {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    outline: 0px
+}
+
+#button:active {
+    background-color: rgb(85, 85, 85);
+}
+
