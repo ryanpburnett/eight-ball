@@ -4,8 +4,12 @@ var choices = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes
 
 document.getElementById("button").addEventListener("click", eightBall)
 
+// CSS of magic 8 ball, shake animation
+// fix opacity- only fades in on frist click
 function eightBall() {
 var pickChoice = choices[Math.floor(Math.random() * choices.length)]
-document.getElementById("result").innerHTML = pickChoice;
-console.log(pickChoice)
+var result = document.getElementById("result")
+result.setAttribute("style", "opacity: 100%");
+result.innerHTML = pickChoice;
+console.log(pickChoice);
 }
