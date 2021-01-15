@@ -7,9 +7,13 @@ document.getElementById("button").addEventListener("click", eightBall)
 // CSS of magic 8 ball, shake animation
 // fix opacity- only fades in on frist click
 function eightBall() {
-var pickChoice = choices[Math.floor(Math.random() * choices.length)]
-var result = document.getElementById("result")
-result.setAttribute("style", "opacity: 100%");
-result.innerHTML = pickChoice;
-console.log(pickChoice);
+
+    var pickChoice = choices[Math.floor(Math.random() * choices.length)]
+    var result = document.getElementById("result")
+
+    result.innerHTML = ""
+    result.setAttribute("style", "opacity: 0%");
+    result.setAttribute("style", "opacity: 100%");
+    result.innerHTML = pickChoice;
+    console.log(pickChoice);
 }
