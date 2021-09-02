@@ -12,8 +12,7 @@ function eightBall() {
     var result = document.getElementById("result")
 
     result.innerHTML = ""
-    result.setAttribute("style", "opacity: 0%");
-    result.setAttribute("style", "opacity: 100%");
+    result.classList.add('fade-in')
     result.innerHTML = pickChoice;
     console.log(pickChoice);
 }

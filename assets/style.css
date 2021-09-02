@@ -16,7 +16,11 @@ body {
     justify-content: center;
     height: 200px;
     opacity: 0%;
+}
+
+.fade-in {
     transition: opacity 10s ease-in;
+    opacity: 100%;
 }
 
 #result {
