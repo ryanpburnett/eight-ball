@@ -19,6 +19,7 @@ body {
 }
 
 .fade-in {
+    opacity: 0%;
     transition: opacity 10s ease-in;
     opacity: 100%;
 }
